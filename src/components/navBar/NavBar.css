@@ -1,0 +1,55 @@
+.navbar-header {
+  position: fixed;
+  top: 0px;
+  left: 0px;
+  width: 100%;
+
+  background-color: var(--primary-color);
+  padding: 30px 10%;
+  z-index: 1000;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.navbar-icon {
+  position: relative;
+  top: 6px;
+  left: 10px;
+  transition: transform 0.6s ease-in-out;
+}
+
+.navbar-logo:hover .navbar-icon {
+  transform: rotate(360deg);
+}
+
+.navbar-logo {
+  font-size: 32px;
+  color: var(--background-color);
+  font-weight: 700;
+  cursor: pointer;
+}
+
+.navbar-links a {
+  position: relative;
+  font-size: 18px;
+  color: var(--background-color);
+  font-weight: 500;
+  margin-left: 40px;
+}
+
+.navbar-links a::before {
+  content: '';
+  position: absolute;
+  top: 100%;
+  left: 0;
+  width: 0;
+  height: 2px;
+  background: var(--accent-color);
+  transition: .3s;
+}
+
+.navbar-links a:hover::before {
+  width: 100%;
+}
