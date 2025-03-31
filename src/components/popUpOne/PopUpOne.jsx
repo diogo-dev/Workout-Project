@@ -9,7 +9,7 @@ const PopUpOne = ({ nextStep, closePopUp }) => {
   return (
     <div className='popup-one-outer-conteiner'>
       <p className='popup-one-title'>Select the parameters:</p>
-      <button className='workout-popup-cancel-button' onClick={closePopUp}><MdOutlineCancel /></button>
+      <button className='popup-two-cancel-button' onClick={closePopUp}><MdOutlineCancel /></button>
       <div className='popup-one-inner-conteiner'>
         <div className='popup-one-line'>
           <p>Muscle to exercise:</p>

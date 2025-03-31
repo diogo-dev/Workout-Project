@@ -1,7 +1,7 @@
 import { useState } from "react"
 import './TwoStepForm.css'
-import PopUpForm from '../../components/popUpForm/PopUpForm'
-import WorkoutPopUp from '../../components/workoutPopUp/WorkoutPopUp'
+import PopUpOne from '../../components/PopUpOne/PopUpOne'
+import PopUpTwo from '../../components/popUpTwo/PopUpTwo'
 
 const TwoStepForm = ({ onClose, exercise, setExercise }) => {
   const [step, setStep] = useState(1); // Track the current step
@@ -20,12 +20,12 @@ const TwoStepForm = ({ onClose, exercise, setExercise }) => {
 
       {/* Step 1 */}
       {step === 1 && (
-        <PopUpForm nextStep={nextStep} closePopUp={onClose} />
+        <PopUpOne nextStep={nextStep} closePopUp={onClose} />
       )}
 
       {/* Step 2 */}
       {step === 2 && (
-        <WorkoutPopUp prevStep={prevStep} closePopUp={onClose} exercise={exercise} setExercise={setExercise} />
+        <PopUpTwo prevStep={prevStep} closePopUp={onClose} exercise={exercise} setExercise={setExercise} />
       )}
     </div>
   );

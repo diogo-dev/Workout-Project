@@ -8,7 +8,7 @@ import WorkoutCard from './components/workoutCard/WorkoutCard'
 import WorkoutCardList from './components/workoutCardList/WorkoutCardList'
 import Timer from './components/timer/Timer'
 import Calendar from './components/calendar/Calendar'
-import WorkoutPopUp from './components/workoutPopUp/WorkoutPopUp'
+import PopUpTwo from './components/popUpTwo/PopUpTwo'
 
 //pages
 import Home from './pages/homePage/Home'
