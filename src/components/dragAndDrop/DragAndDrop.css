@@ -1,0 +1,29 @@
+.drag-and-drop-outer-conteiner {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  width: 400px;
+  height: 500px;
+  overflow-y: auto;
+  scroll-behavior: smooth;
+  gap: 5px;
+  padding: 5px 10px;
+  border: 2px solid rgba(0, 0, 0, 0.3);
+  border-radius: 10px;
+}
+
+.drag-and-drop-outer-conteiner.drag-over {
+  border: 2px dashed rgba(0, 0, 0, 0.9);
+}
+
+.drag-and-drop-workout-text {
+  font-size: 24px;
+  font-weight: 600;
+  color: var(--primary-color);
+  opacity: 50%;
+
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
