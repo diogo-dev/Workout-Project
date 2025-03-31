@@ -1,12 +1,9 @@
-# React + Vite
+# React + Css
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+This is a project of a workout planner. Nowadays the backend is being implemented, but for now, in order for the data to have persistence, I've used the Indexed.db (To use this database, you need to install it first: npm install idb)
 
-Currently, two official plugins are available:
-
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
-
-## Expanding the ESLint configuration
-
-If you are developing a production application, we recommend using TypeScript and enable type-aware lint rules. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+The application have the following pages:
+- Home (Motivatinal Quote obtained from NinjaAPI)
+- Planner (The user are able to vizualize the workout of a specific day)
+- Create Workout Page (The user can create/delete the exercises to his workout and even get workout suggestions that comes from the same NinjaAPI)
+- Session (Now it is time to train. The user is able to use the timer to check the workout duration and to monitor the rest time. Also, this page allows to drag exercises from the "To do" column to the "Done" column which is an important action to trak the progression of exercises being concluded)

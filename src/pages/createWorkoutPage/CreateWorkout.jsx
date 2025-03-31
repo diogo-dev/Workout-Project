@@ -51,6 +51,7 @@ const CreateWorkout = () => {
       const existingWorkoutExercises = await getExercisesByWorkoutDate(selectedDate);
       setWorkoutExercises(existingWorkoutExercises);
 
+      // scroll to the bottom of the container after adding a new exercise
       // using setTimeout to ensure the new added exercise has been rendered already
       setTimeout(() => {
         if (containerRef.current) {
