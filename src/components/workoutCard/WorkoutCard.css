@@ -1,0 +1,77 @@
+.workout-card-conteiner {
+  position: relative;
+  width: 100%;
+  background-color: var(--accent-color);
+  border-radius: 10px;
+  padding: 10px 25px;
+
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+
+  transition: box-shadow .3s ease;
+}
+
+.workout-card-conteiner.drag-over {
+  opacity: 1;
+  background-color: #ffeb3b;
+  border: 2px dashed #ff9800;
+}
+
+.workout-card-conteiner:hover {
+  box-shadow: 2px 2px 8px rgba(67, 67, 67, 0.8);
+}
+
+.workout-card-conteiner h2 {
+  font-size: 22px;
+}
+
+.workout-card-conteiner strong {
+  font-style: italic;
+}
+
+.exercise-difficulty {
+  font-size: 14px;
+  font-weight: 600;
+  font-style: italic;
+  color: var(--primary-color);
+  margin-top: -8px;
+}
+
+.exercise-sets-reps,
+.exercise-notes {
+  font-size: 16px;
+}
+
+.note-icon {
+  position: relative;
+  top: 5px;
+}
+
+.workout-card-button {
+  position: absolute;
+  top: 20px;
+  right: 30px;
+  font-size: 22px;
+  margin-top: 10px;
+  cursor: pointer;
+
+  border: none;
+  border-radius: 10px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  background-color: transparent;
+  transition: color 0.4 ease, transform 0.4s ease;
+}
+
+.workout-card-button:hover {
+  transform: scale(1.15);
+}
+
+.workout-card-button:active {
+  color: var(--delete-color);
+  transform: scale(0.95);
+}
