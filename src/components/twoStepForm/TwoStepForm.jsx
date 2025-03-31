@@ -1,0 +1,34 @@
+import { useState } from "react"
+import './TwoStepForm.css'
+import PopUpForm from '../../components/popUpForm/PopUpForm'
+import WorkoutPopUp from '../../components/workoutPopUp/WorkoutPopUp'
+
+const TwoStepForm = ({ onClose, exercise, setExercise }) => {
+  const [step, setStep] = useState(1); // Track the current step
+
+  const nextStep = () => setStep((prev) => Math.min(prev + 1, 2));
+  const prevStep = () => setStep((prev) => Math.max(prev - 1, 1));
+
+  return (
+    <div className="two-step-form-container">
+      {/* Progress Bar */}
+      <progress
+        value={step}
+        max="2"
+        className="two-step-form-progress-bar"
+      ></progress>
+
+      {/* Step 1 */}
+      {step === 1 && (
+        <PopUpForm nextStep={nextStep} closePopUp={onClose} />
+      )}
+
+      {/* Step 2 */}
+      {step === 2 && (
+        <WorkoutPopUp prevStep={prevStep} closePopUp={onClose} exercise={exercise} setExercise={setExercise} />
+      )}
+    </div>
+  );
+};
+
+export default TwoStepForm;
