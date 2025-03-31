@@ -1,0 +1,73 @@
+.timer-stopwatch {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border: 2px solid var(--accent-color);
+  border-radius: 30px;
+  background-color: #ffdc8a;
+  padding: 15px;
+  box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.7);
+}
+
+.display-timer {
+  font-size: 3.5rem;
+  font-family: monospace;
+  font-weight: bold;
+  color: hsl(0, 0%, 30%);
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.7);
+  margin-bottom: 5px;
+}
+
+.timer-controls button{
+  font-size: 1rem;
+  font-weight: bold;
+  font-family: 'Exo 2';
+  padding: 10px;
+  margin: 10px;
+  min-width: 150px;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  color: white;
+
+  transition: transform .3s ease, opacity .1s ease;
+}
+
+.timer-start-button {
+  background-color: var(--secundary-color);
+}
+
+.timer-start-button:hover {
+  transform: scale(1.02);
+}
+
+.timer-start-button:active {
+  transform: scale(0.98);
+  opacity: 0.6;
+}
+
+.timer-stop-button {
+  background-color: var(--delete-color);
+}
+
+.timer-stop-button:hover {
+  transform: scale(1.02);
+}
+
+.timer-stop-button:active {
+  transform: scale(0.98);
+  opacity: 0.6;
+}
+
+.timer-reset-button {
+  background-color: var(--primary-color);
+}
+
+.timer-reset-button:hover {
+  transform: scale(1.02);
+}
+
+.timer-reset-button:active {
+  transform: scale(0.98);
+  opacity: 0.6;
+}
