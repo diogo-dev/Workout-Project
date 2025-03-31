@@ -1,0 +1,68 @@
+.popup-one-outer-conteiner {
+  position: relative;
+  width: 600px;
+  background-color: white;
+  padding: 20px 40px;
+  border-radius: 10px;
+  box-shadow: 0px 2px 4px 4px rgba(0, 0, 0, 0.1);
+
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.popup-one-inner-conteiner {
+  display: flex;
+  gap: 100px;
+}
+
+.popup-one-line {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.popup-one-line p {
+  font-size: 20px;
+  font-style: italic;
+}
+
+.popup-one-line select {
+  margin-top: 5px;
+  height: 35px;
+  width: 100%;
+  outline: none;
+  border-radius: 10px;
+  border: 2px solid rgba(255, 255, 255, .2);
+  font-size: 16px;
+  font-family: 'Exo 2';
+  color: var(--text-color);
+  background-color: var(--background-color);
+}
+
+.popup-one-title {
+  font-size: 28px;
+  font-weight: 600;
+}
+
+.popup-one-next-button {
+  font-family: 'Exo 2';
+  font-size: 14px;
+  border: none;
+  border-radius: 5px;
+  padding: 10px 15px;
+  background-color: var(--primary-color);
+  color: white;
+  align-self: flex-end;
+  width: 80px;
+
+  transition: transform .3s ease;
+}
+
+.popup-one-next-button:hover {
+  transform: scale(1.05);
+}
+
+.popup-one-next-button:active {
+  transform: scale(0.95);
+}
