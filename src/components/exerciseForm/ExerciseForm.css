@@ -1,0 +1,107 @@
+.exercise-form-container {
+  position: relative;
+  width: 500px;
+  background-color: var(--accent-color);
+  border-radius: 10px;
+  border: 2px solid rgba(255, 255, 255, .2);
+  box-shadow: 2px 2px 6px rgba(0, 0, 0, 0.4);
+  padding: 30px 40px;
+  /* Adding the button height to the padding bottom
+    so the layout stays the same */
+  /* 30px + button-size(40px) = 70px*/
+  padding-bottom: 70px;
+}
+
+.exercise-form-container h1 {
+  font-size: 32px;
+  text-align: center;
+  margin-bottom: 20px;
+  color: var(--text-color);
+}
+
+.form-input-box {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+
+  width: 100%;
+  margin: 15px 0;
+}
+
+.form-input-box input,
+.form-input-box select {
+  height: 35px;
+  width: 100%;
+  outline: none;
+  border-radius: 10px;
+  border: 2px solid rgba(255, 255, 255, .2);
+  font-size: 16px;
+  font-family: 'Exo 2';
+  color: var(--text-color);
+  background-color: var(--background-color);
+}
+
+.form-input-box input {
+  padding: 0px 15px;
+}
+
+.form-input-box label {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  width: 100%;
+}
+
+.form-textarea-box label {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.form-textarea-box {
+  margin: 15px 0;
+}
+
+.form-textarea-box textarea {
+  height: 60px;
+  border-radius: 10px;
+  outline: none;
+  border: 2px solid rgba(255, 255, 255, .2);
+  padding: 20px;
+  font-size: 16px;
+  font-family: 'Exo 2';
+  background-color: var(--background-color);
+}
+
+.exercise-form-container span {
+  font-size: 17px;
+  font-weight: 500;
+  color: var(--text-color);
+}
+
+.exercise-form-button {
+  position: absolute;
+  right: 40px;
+
+  width: 25%;
+  height: 40px;
+  border-radius: 10px;
+  border-style: none;
+
+  background-color: var(--primary-color);
+  color: var(--background-color);
+  font-family: 'Exo 2';
+  font-size: 15px;
+  cursor: pointer;
+
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.exercise-form-button:hover {
+  transform: scale(1.05);
+}
+
+.exercise-form-button:active {
+  background-color: var(--secundary-color);
+  transform: scale(0.95);
+}
