@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import './Home.css'
 import { IoReload } from "react-icons/io5";
-import { useNinjaAPI } from '../../hooks/useNinjaAPI.jsx';;
+import { useNinjaAPI } from '../../hooks/useNinjaAPI.jsx';
 
 const Home = () => {
   const url = "https://api.api-ninjas.com/v1/quotes";

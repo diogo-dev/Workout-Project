@@ -1,13 +1,11 @@
-.session-page-outer-conteiner {
+.session-page-inner-conteiner {
   display: flex;
   align-items: center;
   justify-content: center;
-  gap: 50px;
-  margin-top: 50px;
+  gap: 70px;
 }
 
 .session-page-timer-conteiner {
-  flex: 1;  
   display: flex;
   flex-direction: column;
   gap: 40px;
@@ -31,8 +29,8 @@
 }
 
 .session-page-drag-drop-conteiner {
-  flex: 2;
   display: flex;
+  justify-content: center;
   gap: 20px;
 }
 

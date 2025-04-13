@@ -5,7 +5,7 @@
   width: 100%;
   min-height: 100vh;
   
-  background-image: url('../../assets/workout1.jpg');
+  background-image: url('../../assets/01.jpg');
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -19,8 +19,9 @@
   border: none;
   border-radius: 25px;
   width: 700px;
-  background-color: white;
-  box-shadow: 2px 2px 4px rgba(0,0,0, 0.4);
+  background-color: rgba(69, 69, 69, 0.48);
+  backdrop-filter: blur(15px);
+  box-shadow: 3px 3px 6px rgba(61, 64, 91, 0.5);
   padding: 40px;
 }
 
@@ -30,7 +31,11 @@
   font-style: italic;
   font-weight: 700;
   text-align: center;
-  color: black;
+  color: var(--background-color);
+}
+
+.home-page-author-text, .home-page-loading-text {
+  color: var(--background-color);
 }
 
 .home-page-quote-button {
@@ -39,6 +44,7 @@
   right: 40px;
   bottom: 30px;
   background-color: transparent;
+  color: var(--background-color);
   font-size: 22px;
 
   transition: transform 0.5s ease-in-out;

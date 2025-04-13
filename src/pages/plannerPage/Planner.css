@@ -1,6 +1,14 @@
 .planner-conteiner {
   display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
   gap: 30px;
+
+  background-image: url('../../assets/04.jpg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
 }
 
 .planner-title {
@@ -8,6 +16,7 @@
   top: 17%;
   left: 50%;
   transform: translate(-50%, -50%);
+  color: var(--background-color);
 
   font-size: 40px;
   font-weight: 700;
