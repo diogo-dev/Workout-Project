@@ -28,7 +28,6 @@ function App() {
           <Route path='/planner' element={<Planner />} />
           <Route path='/planner/create-workout' element={<CreateWorkout />} />
           <Route path='/session' element={<WorkoutSession />} />
-          <Route path='/history' element={<History />} />
         </Routes>
       </BrowserRouter>
     </div>
