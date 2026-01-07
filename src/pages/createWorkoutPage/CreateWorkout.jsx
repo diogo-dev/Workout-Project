@@ -88,7 +88,7 @@ const CreateWorkout = () => {
     <div>
       {showPopUp && <TwoStepForm onClose={handleOnClick} exercise={exercise} setExercise={setExercise} />}
       <div className='create-workout-page-conteiner' id='blur'>
-        <h1 className='create-workout-title'>{selectedDate}</h1>
+        <h1 className='create-workout-title'>Day ({selectedDate})</h1>
         <ExerciseForm onAddExercise={handleAddExercise} exercise={exercise} setExercise={setExercise} />
         <WorkoutCardList
           containerRef={containerRef}

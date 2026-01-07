@@ -1,8 +1,17 @@
 .create-workout-page-conteiner {
   display: flex;
-  justify-content: center;
-  align-items: center;
+  justify-content: center;      /* centraliza os itens no eixo horizontal */
+  align-items: flex-start;      /* alinha topo no eixo vertical */
+  align-content: flex-start;    /* quando quebrar linha (wrap), mantém no topo */
+  flex-wrap: wrap;
   gap: 30px;
+  padding-top: var(--header-height); /* compensa navbar fixo */
+  min-height: 100vh;
+
+  background-image: url('../../assets/04.jpg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
 }
 
 /* Blur the page when the workout suggestion button is clicked */
@@ -13,12 +22,13 @@
 }
 
 .create-workout-title {
-  position: absolute;
-  top: 17%;
-  left: 50%;
-  transform: translate(-50%, -50%);
+  position: static;
+  flex-basis: 100%;
+  text-align: center;
+  margin: 16px 0 5px;
+  color: white;
 
-  font-size: 40px;
+  font-size: 50px;
   font-weight: 700;
   font-style: italic;
 }
@@ -26,8 +36,8 @@
 /* Verify if is possible to animate both at the same time
   without the icon disable before the button */
 .workout-suggestion-icon {
-  color: var(--primary-color);
-  opacity: 40%;
+  color: var(--background-color);
+  opacity: 60%;
   font-size: 32px;
   cursor: pointer;
 
@@ -42,7 +52,7 @@
 .workout-suggestion-button {
   position: absolute;
   right: 11%;
-  top: 17%;
+  top: calc(var(--header-height) + 20px);
   border: none;
   background-color: transparent;
 }
@@ -50,7 +60,7 @@
 .return-to-planner-page-icon {
   position: absolute;
   left: 11%;
-  top: 17%;
+  top: calc(var(--header-height) + 20px);
   font-size: 22px;
   border: none;
   background-color: transparent;

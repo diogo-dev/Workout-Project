@@ -13,8 +13,8 @@
 .no-exercises-for-workout-text {
   font-size: 28px;
   font-weight: 600;
-  color: var(--primary-color);
-  opacity: 50%;
+  color: var(--background-color);
+  opacity: 80%;
 
   position: absolute;
   top: 50%;

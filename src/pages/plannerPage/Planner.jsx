@@ -11,7 +11,6 @@ import { useCalendar } from '../../hooks/useCalendar.jsx'
 //import the database
 import { addWorkout, getWorkoutByDate, getExercisesByWorkoutDate } from "../../db/Indexed"
 
-
 const Planner = () => {
   const navigate = useNavigate();
   const { selectedDate } = useCalendar();

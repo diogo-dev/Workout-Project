@@ -1,14 +1,29 @@
-.session-page-inner-conteiner {
+.session-page-conteiner {
   display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 60px;
+  padding-top: var(--header-height); /* compensa navbar fixo */
+  min-height: 100vh;
+
+  background-image: url('../../assets/06.jpg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.session-page-left {
+  display: flex;
+  flex-direction: column;
   align-items: center;
   justify-content: center;
-  gap: 70px;
+  gap: 40px;
 }
 
 .session-page-timer-conteiner {
   display: flex;
   flex-direction: column;
-  gap: 40px;
+  gap: 40px
 }
 
 .session-page-timer-conteiner div {
@@ -20,23 +35,13 @@
   font-weight: 700;
   font-style: italic;
   margin-bottom: 8px;
+  color: white;
 }
-
 .session-page-date-selector {
-  position: absolute;
-  left: 10%;
-  top: 15%;
-}
-
-.session-page-drag-drop-conteiner {
-  display: flex;
-  justify-content: center;
-  gap: 20px;
-}
-
-.session-page-drag-drop-conteiner div {
-  display: flex;
-  flex-direction: column;
+  background-color: white;
+  padding: 10px 15px;
+  border-radius: 10px;
+  border: 3px solid var(--primary-color);
 }
 
 .session-page-drag-drop-text {
@@ -45,4 +50,39 @@
   font-style: italic;
   margin-bottom: 8px;
   text-align: center;
+  color: white;
+}
+
+/* Right column to stack DateSelector above columns */
+.session-page-right {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  align-items: center;
+}
+
+/* Responsiveness: stack sections on smaller screens */
+@media (max-width: 900px) {
+  .session-page-inner-conteiner {
+    flex-direction: column;
+    gap: 32px;
+    padding-top: calc(var(--header-height) + 16px);
+    min-height: auto;
+  }
+
+  .session-page-timer-text,
+  .session-page-drag-drop-text {
+    font-size: 24px;
+  }
+
+  .session-page-date-selector {
+    margin-bottom: 10px;
+  }
+
+  /* Stack To do / Done vertically on smaller screens */
+  .session-page-drag-drop-conteiner {
+    flex-direction: column;
+    align-items: stretch;
+    gap: 16px;
+  }
 }

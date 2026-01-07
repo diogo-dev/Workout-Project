@@ -1,22 +1,23 @@
 .exercise-form-container {
   position: relative;
-  width: 500px;
-  background-color: var(--accent-color);
-  border-radius: 10px;
-  border: 2px solid rgba(255, 255, 255, .2);
+  width: 450px;
+  max-width: 90vw; /* responsiveness in small screens */
+  background-color: var(--background-color);
+  border-radius: 15px;
+  border: 8px solid var(--primary-color);
   box-shadow: 2px 2px 6px rgba(0, 0, 0, 0.4);
-  padding: 30px 40px;
+  padding: 20px 30px;
   /* Adding the button height to the padding bottom
     so the layout stays the same */
-  /* 30px + button-size(40px) = 70px*/
-  padding-bottom: 70px;
+  /* 20px + button-size(35px) + 5px gap = 60px*/
+  padding-bottom: 60px;
 }
 
 .exercise-form-container h1 {
-  font-size: 32px;
+  font-size: 28px;
   text-align: center;
-  margin-bottom: 20px;
-  color: var(--text-color);
+  margin-bottom: 16px;
+  color: black;
 }
 
 .form-input-box {
@@ -25,66 +26,67 @@
   gap: 10px;
 
   width: 100%;
-  margin: 15px 0;
+  margin: 12px 0;
 }
 
 .form-input-box input,
 .form-input-box select {
-  height: 35px;
+  height: 32px;
   width: 100%;
   outline: none;
   border-radius: 10px;
   border: 2px solid rgba(255, 255, 255, .2);
-  font-size: 16px;
+  font-size: 15px;
   font-family: 'Exo 2';
   color: var(--text-color);
   background-color: var(--background-color);
 }
 
-.form-input-box input {
+.form-input-box input,
+.form-input-box select {
   padding: 0px 15px;
+  border-color: var(--primary-color);
 }
 
 .form-input-box label {
   display: flex;
   flex-direction: column;
-  gap: 8px;
+  gap: 6px;
   width: 100%;
 }
 
 .form-textarea-box label {
   display: flex;
   flex-direction: column;
-  gap: 8px;
+  gap: 6px;
 }
 
 .form-textarea-box {
-  margin: 15px 0;
+  margin: 12px 0;
 }
 
 .form-textarea-box textarea {
-  height: 60px;
+  height: 50px;
   border-radius: 10px;
-  outline: none;
-  border: 2px solid rgba(255, 255, 255, .2);
-  padding: 20px;
-  font-size: 16px;
+  border: 2px solid var(--primary-color);
+  padding: 12px 15px;
+  font-size: 15px;
   font-family: 'Exo 2';
   background-color: var(--background-color);
 }
 
 .exercise-form-container span {
-  font-size: 17px;
+  font-size: 15px;
   font-weight: 500;
   color: var(--text-color);
 }
 
 .exercise-form-button {
   position: absolute;
-  right: 40px;
+  right: 30px;
 
-  width: 25%;
-  height: 40px;
+  width: 30%;
+  height: 35px;
   border-radius: 10px;
   border-style: none;
 

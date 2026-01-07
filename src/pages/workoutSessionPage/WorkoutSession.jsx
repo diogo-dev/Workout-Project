@@ -28,11 +28,13 @@ const WorkoutSession = () => {
   }, [selectedDate]);
 
   return (
-    <>
-      <div className='session-page-date-selector'>
-        <DateSelector />
-      </div>
-      <div className="session-page-inner-conteiner">
+    <div className='session-page-conteiner'>
+      <div className="session-page-left">
+
+        <div className='session-page-date-selector'>
+            <DateSelector />
+        </div>
+
         <div className='session-page-timer-conteiner'>
           <div>
             <p className='session-page-timer-text'>Workout Duration:</p>
@@ -43,30 +45,32 @@ const WorkoutSession = () => {
             <Timer />
           </div>
         </div>
-        <div className='session-page-drag-drop-conteiner'>
-          <div>
-            <p className='session-page-drag-drop-text'>To do</p>
-            <DragAndDrop
-              workout={workout}
-              exercises={workoutExercises}
-              setExercises={setWorkoutExercises}
-              text="Nothing to do!"
-              column="todo"
-            />
-          </div>
-          <div>
-            <p className='session-page-drag-drop-text'>Done</p>
-            <DragAndDrop
-              workout={workout}
-              exercises={workoutExercises}
-              setExercises={setWorkoutExercises}
-              text="Nothing done yet!"
-              column="done"
-            />
-          </div>
+      </div>
+
+      <div className='session-page-right'>
+        
+        <div>
+          <p className='session-page-drag-drop-text'>To do</p>
+          <DragAndDrop
+            workout={workout}
+            exercises={workoutExercises}
+            setExercises={setWorkoutExercises}
+            text="Nothing to do!"
+            column="todo"
+          />
+        </div>
+        <div>
+          <p className='session-page-drag-drop-text'>Done</p>
+          <DragAndDrop
+            workout={workout}
+            exercises={workoutExercises}
+            setExercises={setWorkoutExercises}
+            text="Nothing done yet!"
+            column="done"
+          />
         </div>
       </div>
-    </>
+    </div>
   )
 }
 

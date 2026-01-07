@@ -18,6 +18,8 @@
   --subtext-color: #6D6D6D;
   /* Subtext */
   --delete-color: #E63946;
+  --header-height: 98px;
+  /* Fixed navbar height */
 
   font-family: 'Exo 2', 'Bebas Neue', Arial, Helvetica, sans-serif;
 }
@@ -32,7 +34,7 @@ body {
   align-items: center;
   min-width: 320px;
   min-height: 100vh;
-  background-color: var(--background-color);
+  background-color: black;
   height: 100%;
   /* 98px is the size of the navbar header */
   /*  margin-top: 98px; */

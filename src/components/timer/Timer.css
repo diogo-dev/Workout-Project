@@ -2,29 +2,31 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  border: 2px solid var(--accent-color);
-  border-radius: 30px;
-  background-color: #ffdc8a;
-  padding: 15px;
+  border: 3px solid var(--primary-color);
+  border-radius: 20px;
+  background-color: var(--background-color);
+  padding: 12px;
   box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.7);
+  max-width: 300px;
+  width: 100%;
 }
 
 .display-timer {
-  font-size: 3.5rem;
+  font-size: 2.5rem;
   font-family: monospace;
   font-weight: bold;
-  color: hsl(0, 0%, 30%);
+  color: var(--primary-color);
   text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.7);
-  margin-bottom: 5px;
+  margin-bottom: 8px;
 }
 
 .timer-controls button{
-  font-size: 1rem;
+  font-size: 0.9rem;
   font-weight: bold;
   font-family: 'Exo 2';
-  padding: 10px;
-  margin: 10px;
-  min-width: 150px;
+  padding: 8px 12px;
+  margin: 6px;
+  min-width: 100px;
   border: none;
   border-radius: 10px;
   cursor: pointer;
@@ -47,7 +49,7 @@
 }
 
 .timer-stop-button {
-  background-color: var(--delete-color);
+  background-color: black;
 }
 
 .timer-stop-button:hover {
@@ -70,4 +72,67 @@
 .timer-reset-button:active {
   transform: scale(0.98);
   opacity: 0.6;
+}
+
+/* Responsivo para tablets e dispositivos médios */
+@media (max-width: 768px) {
+  .timer-stopwatch {
+    max-width: 280px;
+    padding: 10px;
+    border: 2px solid var(--primary-color);
+    border-radius: 15px;
+  }
+
+  .display-timer {
+    font-size: 2rem;
+    margin-bottom: 6px;
+  }
+
+  .timer-controls button {
+    font-size: 0.85rem;
+    padding: 6px 10px;
+    margin: 5px;
+    min-width: 90px;
+  }
+}
+
+/* Responsivo para celulares pequenos */
+@media (max-width: 480px) {
+  .timer-stopwatch {
+    max-width: 250px;
+    padding: 8px;
+    border: 2px solid var(--primary-color);
+  }
+
+  .display-timer {
+    font-size: 1.8rem;
+    margin-bottom: 5px;
+  }
+
+  .timer-controls button {
+    font-size: 0.75rem;
+    padding: 6px 8px;
+    margin: 4px;
+    min-width: 80px;
+  }
+}
+
+/* Responsivo para dispositivos muito pequenos */
+@media (max-width: 360px) {
+  .timer-stopwatch {
+    max-width: 220px;
+    padding: 6px;
+  }
+
+  .display-timer {
+    font-size: 1.5rem;
+    margin-bottom: 4px;
+  }
+
+  .timer-controls button {
+    font-size: 0.65rem;
+    padding: 5px 6px;
+    margin: 3px;
+    min-width: 70px;
+  }
 }

@@ -1,21 +1,23 @@
 .workout-card-conteiner {
   position: relative;
   width: 100%;
-  background-color: var(--accent-color);
+  background-color: var(--primary-color);
   border-radius: 10px;
   padding: 10px 25px;
+  color: var(--background-color);
 
   display: flex;
   flex-direction: column;
   gap: 5px;
 
   transition: box-shadow .3s ease;
+  overflow-wrap: anywhere;
 }
 
 .workout-card-conteiner.drag-over {
   opacity: 1;
-  background-color: #ffeb3b;
-  border: 2px dashed #ff9800;
+  background-color: #565b81;
+  border: 2px dashed var(--background-color);
 }
 
 .workout-card-conteiner:hover {
@@ -55,6 +57,7 @@
   font-size: 22px;
   margin-top: 10px;
   cursor: pointer;
+  color: var(--background-color);
 
   border: none;
   border-radius: 10px;
@@ -72,6 +75,60 @@
 }
 
 .workout-card-button:active {
-  color: var(--delete-color);
+  color: black;
   transform: scale(0.95);
+}
+
+/* Tablet adjustments */
+@media (max-width: 900px) {
+  .workout-card-conteiner {
+    padding: 10px 16px;
+    gap: 6px;
+  }
+
+  .workout-card-conteiner h2 {
+    font-size: 20px;
+  }
+
+  .exercise-difficulty {
+    font-size: 13px;
+  }
+
+  .exercise-sets-reps,
+  .exercise-notes {
+    font-size: 15px;
+  }
+
+  .workout-card-button {
+    top: 14px;
+    right: 16px;
+    font-size: 20px;
+  }
+}
+
+/* Mobile adjustments */
+@media (max-width: 600px) {
+  .workout-card-conteiner {
+    padding: 8px 12px;
+    gap: 4px;
+  }
+
+  .workout-card-conteiner h2 {
+    font-size: 18px;
+  }
+
+  .exercise-difficulty {
+    font-size: 12px;
+  }
+
+  .exercise-sets-reps,
+  .exercise-notes {
+    font-size: 14px;
+  }
+
+  .workout-card-button {
+    top: 12px;
+    right: 12px;
+    font-size: 18px;
+  }
 }

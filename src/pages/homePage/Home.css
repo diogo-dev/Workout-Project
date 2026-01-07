@@ -5,6 +5,7 @@
   width: 100%;
   min-height: 100vh;
   
+  background-color: black;
   background-image: url('../../assets/01.jpg');
   background-size: cover;
   background-position: center;
@@ -13,7 +14,7 @@
 
 .home-page-quote-conteiner {
   position: absolute;
-  top: 200px;
+  top: calc(var(--header-height) + 100px);
   left: 50%;
   transform: translate(-50%);
   border: none;
