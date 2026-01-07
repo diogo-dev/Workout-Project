@@ -29,16 +29,16 @@ The application have the following pages:
 
 >Obs: The user is able to change the workout cards position by 'drag-and-drop'. The animation package used for this functionality was provided by Motion (link: https://motion.dev/)
 
+>Obs: The calendar used on this page was imported from the MUI UI components library (link: https://mui.com/material-ui/all-components/). However, I styled it :)
+
 ## Create Workout Page 
 - The user can create and delete exercises in their workout
 - the user can get workout suggestions from the top-right hand icon on the page  
 <table align="center">
   <td align="center">
-    <img src="/src/assets/planner.png" alt="Home Page" width="800" />
+    <img src="/src/assets/createWorkout.png" alt="Home Page" width="800" />
   </td>
 </table>
-
-> The calendar used on this page was imported from the MUI UI components library (link: https://mui.com/material-ui/all-components/). However, I styled it :)
 
 - This following diagram shows how the user can create a workout:
 1) Click in the 'create workout' button in the planner page
