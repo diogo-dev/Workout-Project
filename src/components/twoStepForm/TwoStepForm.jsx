@@ -1,6 +1,6 @@
 import { useState } from "react"
 import './TwoStepForm.css'
-import PopUpOne from '../../components/PopUpOne/PopUpOne'
+import PopUpOne from '../../components/popUpOne/PopUpOne'
 import PopUpTwo from '../../components/popUpTwo/PopUpTwo'
 
 const TwoStepForm = ({ onClose, exercise, setExercise }) => {
