@@ -1,6 +1,6 @@
 # Workout Project (React + CSS)
 
-This is a workout planner project. It is a front-end application, and data persistence is implemented using the idb package, which allows the application to save workouts and exercises directly in the browser using IndexedDB, ensuring that user data is preserved even after page reloads.
+This is a workout planner project. It is a front-end application, and data persistence was implemented using the idb package, which allows the application to save workouts and exercises directly in the browser using IndexedDB, ensuring that user data is preserved even after page reloads.
 
 Run the project:
 - You can run the project by doing:
