@@ -1,41 +1,4 @@
-/* Select date text */
-.css-6mw38q-MuiTypography-root {
-  display: none !important;
-}
-
-/* Cancel and ok buttons */
-.css-1uent87-MuiButtonBase-root-MuiButton-root {
-  display: none !important;
-}
-
-.css-10qtiir-MuiPickersToolbar-content {
-  justify-content: center !important;
-}
-
-/* Calendar outer conteiner */
-.css-13cnpq9-MuiPickersLayout-root {
-  border: 8px solid var(--primary-color);
-  border-radius: 15px;
-  box-shadow: 2px 2px 6px rgba(0, 0, 0, 0.4) !important;
-  padding: 0px 30px;
-}
-
-.css-13cnpq9-MuiPickersLayout-root .MuiPickersLayout-toolbar {
-  border-bottom: 8px solid var(--primary-color);
-}
-
-.css-1s3y67t-MuiTypography-root-MuiDatePickerToolbar-title,
-.css-1chuxo2-MuiPickersCalendarHeader-label,
-.css-innj4t-MuiPickersYear-yearButton,
-.css-17f9e7e-MuiTypography-root-MuiDayCalendar-weekDayLabel,
-.css-4k4mmf-MuiButtonBase-root-MuiPickersDay-root {
-  font-family: 'Exo 2' !important;
-}
-
-.css-qct7wd-MuiButtonBase-root-MuiPickersDay-root.Mui-selected,
-.css-4k4mmf-MuiButtonBase-root-MuiPickersDay-root.Mui-selected {
-  background-color:#f4bf43 !important;
-}  
+/* Styles moved to inline sx prop in Calendar.jsx for production stability */
 
 .calendar-outer-conteiner {
   position: relative;
@@ -63,4 +26,3 @@
 .create-a-workout-button:active {
   transform: scale(0.95);
 }
-

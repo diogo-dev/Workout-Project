@@ -27,6 +27,32 @@ const Calendar = ({ onCreateWorkout, loadingWorkout }) => {
           openTo='day'
           value={parse(selectedDate, 'dd/MM/yyyy', new Date())}
           onChange={handleDateChange}
+          slotProps={{
+            actionBar: {
+              actions: []
+            },
+            toolbar: {
+              hidden: true
+            }
+          }}
+          sx={{
+            border: '8px solid var(--primary-color)',
+            borderRadius: '15px',
+            boxShadow: '2px 2px 6px rgba(0, 0, 0, 0.4)',
+            padding: '0px 30px',
+            '& .MuiPickersLayout-toolbar': {
+              borderBottom: '8px solid var(--primary-color)',
+            },
+            '& .MuiTypography-root, & .MuiPickersCalendarHeader-label, & .MuiPickersYear-yearButton, & .MuiDayCalendar-weekDayLabel, & .MuiPickersDay-root': {
+              fontFamily: 'Exo 2 !important',
+            },
+            '& .MuiPickersDay-root.Mui-selected': {
+              backgroundColor: '#f4bf43 !important',
+            },
+            '& .MuiPickersToolbar-content': {
+              justifyContent: 'center !important',
+            }
+          }}
         />
         <button
           className='create-a-workout-button'
