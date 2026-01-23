@@ -2,6 +2,8 @@
 
 This is a workout planner project. It is a front-end application, and data persistence was implemented using the idb package, which allows the application to save workouts and exercises directly in the browser using IndexedDB, ensuring that user data is preserved even after page reloads.
 
+Test the application yourself: https://workout-project-mu.vercel.app/
+
 Run the project:
 - You can run the project by doing:
 1) git clone git@github.com:diogo-dev/Workout-Project.git
